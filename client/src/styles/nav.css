@@ -27,11 +27,6 @@
     z-index: 1;
 }
 
-/* .nav-hamburger :hover {
-    background-color: lightgrey;
-    color: black;
-} */
-
 /* NAV LINKS STYLING */
 .nav-links {
     display: none;
@@ -53,6 +48,7 @@
     font-size: 1.5rem;
     padding: 0;
     transition: color 0.3s ease;
+    margin: 10px 0;
 }
 
 .nav-links li {

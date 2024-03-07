@@ -6,6 +6,7 @@ import { Nav } from "../components/Nav.js";
 
 // importing views with lazy loading
 const LandingPage = lazy(() => import("../views/LandingPage"));
+const Register = lazy(() => import("../views/Register"));
 
 export const Router = () => {
   return (
@@ -14,6 +15,7 @@ export const Router = () => {
         <Nav />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/nav.css";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 export const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -12,7 +13,9 @@ export const Nav = () => {
   return (
     <nav className="nav-container">
       {/* LOGO  */}
-      <div className="nav-logo">Logo</div>
+      <div className="nav-logo">
+        <Link to="/h">Logo</Link>
+      </div>
       {/* NAV LINKS */}
 
       {/* HAMBURGER MENU */}
@@ -26,8 +29,12 @@ export const Nav = () => {
         <li>Home</li>
         <li>About</li>
         <li>Contact</li>
-        <li>Login</li>
-        <li>Sign Up</li>
+        <li>
+          <Link to="/login">Login</Link>
+        </li>
+        <li>
+          <Link to="/register ">Register</Link>
+        </li>
       </ul>
     </nav>
   );

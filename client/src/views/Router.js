@@ -1,15 +1,16 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { lazy } from "react";
+
+const LandingPage = lazy(() => import("../views/LandingPage"));
 
 export const Router = () => {
   return (
-    <BrowserRouter basename="/landingpage">
-      <Routes>
-        {/* <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> */}
-      </Routes>
+    <BrowserRouter basename="/">
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 };

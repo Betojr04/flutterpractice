@@ -10,8 +10,8 @@ export const HeroSection = () => {
           Take Control Of Your Finances and Steer Them in The Right Direction
         </p>
       </div>
-      <div>
-        <img src="#" />
+      <div className="hero-image">
+        This is where the image will be, placeholder
       </div>
     </section>
   );

@@ -5,13 +5,14 @@ export const HeroSection = () => {
   return (
     <section className="hero-container">
       <div className="hero-text">
-        <h2>Easy Way To Finance</h2>
+        <h2>Your Company Name Here</h2>
         <p>
-          Take Control Of Your Finances and Steer Them in The Right Direction
+          Snippet of text about the company, what it does, and why it's great.
         </p>
       </div>
       <div className="hero-image">
-        This is where the image will be, placeholder
+        This is where the image will go or be the background of the text in a
+        cool design.
       </div>
     </section>
   );

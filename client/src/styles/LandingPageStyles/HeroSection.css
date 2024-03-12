@@ -1,41 +1,21 @@
 .hero-container {
     display: flex;
     flex-direction: column;
-    /* Stack elements vertically on mobile */
     justify-content: center;
     align-items: center;
-    flex: 1;
 }
 
-/* .hero-text,
-.hero-image {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-} */
-
-img {
-    max-width: 100%;
-    /* Ensures the image doesn't overflow its container */
-    height: auto;
-    /* Maintains the image's aspect ratio as it scales down */
+.hero-title {
+    text-align: center;
 }
+
+
 
 /* For larger screens, switch back to row layout */
 @media (min-width: 768px) {
     .hero-container {
         flex-direction: row;
-        /* Arrange elements horizontally on larger screens */
     }
 
-    .hero-text,
-    .hero-image {
-        width: auto;
-        /* Reset width */
-        padding: 0;
-        /* Reset padding */
-    }
+
 }

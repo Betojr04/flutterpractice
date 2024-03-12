@@ -1,11 +1,12 @@
 import React from "react";
 import "../../styles/LandingPageStyles/HeroSection.css";
-import heroImage from "../../assets/hero.png";
 
 export const HeroSection = () => {
   return (
     <section className="hero-container">
-      <img src={heroImage} alt="Hero" />
+      <div className="hero-title">
+        <h1>Imagine The Possibilities For Your Businesses Website</h1>
+      </div>
     </section>
   );
 };

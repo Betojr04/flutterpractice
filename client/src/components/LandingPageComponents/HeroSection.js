@@ -5,7 +5,11 @@ export const HeroSection = () => {
   return (
     <section className="hero-container">
       <div className="hero-title">
-        <h1>Imagine The Possibilities For Your Businesses Website</h1>
+        <h1>Empowering Your Business Presence Online</h1>
+        <p>
+          Your business deserves to stand out online. Let me help you start your
+          online presence.
+        </p>
       </div>
     </section>
   );
